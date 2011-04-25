@@ -10,14 +10,27 @@ and man pages that implement the proposed **git work** and **git base** commands
 In this way, people who are not in a position to rebuild their own version of git can still
 make use of the proposed commands.
 
-If you are in a position to rebuild your existing git installation, you can simply
-fetch and the merge the work branch from git://github.com/jonseymour/git into your copy of git
-and then build and install git in the normal way. Otherwise, follow the instructions below:
+For more details about the commands provided by this package, read:
+<ul>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-work.html" target="browse">git-work(1)</a></li>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-base.html" target="browse">git-base(1)</a></li>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-atomic.html" target="browse">git-atomic(1)</a></li>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-test.html" target="browse">git-test(1)</a></li>
+</ul>
+or refer to the installed man pages, for example:
 
-
+       man git-work
 
 BUILD
 =====
+The best way to build git work is simply to fetch git://github.com/jonseymour/git into your
+copy of the git repo, check out its work branch and build git in the normal way. If you are happy 
+to do this, you can ignore the following instructions which only apply to people who want to build
+or install a tarball with the proposed additions in order to patch existing git installations.
+
+The instructions that follow immediately are for people that want to build their own tarball containing
+the git work additions. People who are happy to use a pre-built tarball may skip to the INSTALLATION section.
+
 To build the package, you must have a working git installation and be able to build git
 and its documentation. You do not, however, have to install git as part of this process.
 
@@ -77,19 +90,6 @@ UNINSTALL
 If you need to uninstall gitwork, run the following command:
 
         sh ./installer uninstall
-
-USAGE
-=====
-For more details about the commands provided by this package, read:
-<ul>
-<li><a href="https://jonseymour.s3.amazonaws.com/git-work.html" target="browse">git-work(1)</a></li>
-<li><a href="https://jonseymour.s3.amazonaws.com/git-base.html" target="browse">git-base(1)</a></li>
-<li><a href="https://jonseymour.s3.amazonaws.com/git-atomic.html" target="browse">git-atomic(1)</a></li>
-<li><a href="https://jonseymour.s3.amazonaws.com/git-test.html" target="browse">git-test(1)</a></li>
-</ul>
-or refer to the installed man pages, for example:
-
-       man git-work
 
 RATIONALE
 =========
