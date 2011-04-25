@@ -35,22 +35,12 @@ Make the tarball:
 This command will use git's make command to build the git documentation but
 will not attempt to install git itself.
 
-UPDATING
-========
-If you ever need to update your version of gitwork, change to
-the root of your clone and run:
-
-       git fetch origin
-       git checkout -f origin/master # or choose the tag you want to build
-       git submodule update
-
-then re-run the BUILD procedure.
-
 INSTALLATION
 ============
 To install the package you need a working git installation that you have the
 permission to update, a unix shell and tar and a copy of the git-work tarball
-that you built yourself or obtained from a download location.
+that you built yourself or obtained from the <a href="https://github.com/jonseymour/gitwork/archives/master">download</a>
+location.
 
 If you have just built the tarball, you can simply change into the
 build/gitwork-vX.X.X directory, otherwise unpack the tarball
@@ -70,6 +60,17 @@ To install the documentation, run:
         sh ./installer install-man
 
 This command will install the man pages into $(git --exec-path)/../../share/man/man1.
+
+UPDATING
+========
+If you ever need to update your version of gitwork, change to
+the root of your clone and run:
+
+       git fetch origin
+       git checkout -f origin/master # or choose the tag you want to build
+       git submodule update
+
+then re-run the BUILD procedure.
 
 UNINSTALL
 =========
