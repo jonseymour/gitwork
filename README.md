@@ -14,6 +14,17 @@ If you are in a position to rebuild your existing git installation, you can simp
 fetch and the merge the work branch from git://github.com/jonseymour/git into your copy of git
 and then build and install git in the normal way. Otherwise, follow the instructions below:
 
+USAGE
+=====
+For more details about the commands provided by this package, read:
+<ul>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-work.html" target="browse">git-work(1)</a></li>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-base.html" target="browse">git-base(1)</a></li>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-atomic.html" target="browse">git-atomic(1)</a></li>
+<li><a href="https://jonseymour.s3.amazonaws.com/git-test.html" target="browse">git-test(1)</a></li>
+</ul>
+
+
 BUILDING
 ========
 To build the package, you must have a working git installation and be able to build git
