@@ -50,7 +50,7 @@ If you ever need to update your version of gitwork, change to
 the root of your clone and run:
 
        git fetch origin
-       git checkout -f origin/master
+       git checkout -f origin/master # or choose the tag you want to build
        git submodule update
 
 then re-run the BUILD procedure.
