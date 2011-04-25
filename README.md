@@ -51,11 +51,11 @@ permission to update, a unix shell and tar and a copy of the git-work tarball
 that you built yourself or obtained from a download location.
 
 If you have just built the tarball, you can simply change into the
-build/git-work-X.X.X directory, otherwise unpack the tarball
+build/gitwork-vX.X.X directory, otherwise unpack the tarball
 as follows:
 
-	gzip -dc gitwork-X.X.X.tar.gz | tar -xvf -
-	cd git-work-X.X.X
+	gzip -dc gitwork-vX.X.X.tar.gz | tar -xvf -
+	cd gitwork-vX.X.X
 
 Once you are in the root directory of the untar'd package, run:
 
@@ -69,23 +69,14 @@ To install the documentation, run:
 
 This command will install the man pages into $(git --exec-path)/../../share/man/man1.
 
+UNINSTALL
+=========
+If you need to uninstall gitwork, run the following command:
+       sh ./installer uninstall
+
 RATIONALE
 =========
 At this stage the **git work** and **git base** commands are proposed for inclusion
 into git, however, there is no guarantee that the proposal will be accepted. The
 objective of this package is to allow people to experiment with the proposed
 commands while the proposal is being evaluated.
-
-
-STATUS
-======
-Documentation only - still a work in progress. For now, do the following:
-	 
-       git clone git://github.com/jonseymour/gitwork
-       cd gitwork
-       git submodule init
-       git submodule update
-       cd git
-
-       # then make and install git per git's INSTALL file.
-
