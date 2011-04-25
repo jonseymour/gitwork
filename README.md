@@ -74,6 +74,11 @@ To install the documentation, run:
 
 This command will install the man pages into $(git --exec-path)/../../share/man/man1.
 
+Note that the installer does not modify any files of the existing git installation - it simply
+adds new files. One consequence of this is that the git config documentation is not updated. To
+see the proposed updated, please refer to the description of branch.&lt;name&gt;.baseresetoptions
+in [git-config(1)](https://jonseymour.s3.amazonaws.com/git-config.html).
+
 UPDATING
 ========
 If you ever need to update your version of gitwork, change to
