@@ -25,8 +25,8 @@ For more details about the commands provided by this package, read:
 </ul>
 
 
-BUILDING
-========
+BUILD
+=====
 To build the package, you must have a working git installation and be able to build git
 and its documentation. You do not, however, have to install git as part of this process.
 
@@ -44,6 +44,17 @@ Make the tarball:
 This command will use git's make command to build the git documentation but
 will not attempt to install git itself.
 
+UPDATING
+========
+If you ever need to update your version of gitwork, change to
+the root of your clone and run:
+
+       git fetch origin
+       git checkout -f origin/master
+       git submodule update
+
+then re-run the BUILD procedure.
+
 INSTALLATION
 ============
 To install the package you need a working git installation that you have the
@@ -54,25 +65,26 @@ If you have just built the tarball, you can simply change into the
 build/gitwork-vX.X.X directory, otherwise unpack the tarball
 as follows:
 
-	gzip -dc gitwork-vX.X.X.tar.gz | tar -xvf -
-	cd gitwork-vX.X.X
+        gzip -dc gitwork-vX.X.X.tar.gz | tar -xvf -
+        cd gitwork-vX.X.X
 
 Once you are in the root directory of the untar'd package, run:
 
-	sh ./installer install
+        sh ./installer install
 
 This command will update the version of git found in git --exec-path.
 
 To install the documentation, run:
 
-	sh ./installer install-man
+        sh ./installer install-man
 
 This command will install the man pages into $(git --exec-path)/../../share/man/man1.
 
 UNINSTALL
 =========
 If you need to uninstall gitwork, run the following command:
-       sh ./installer uninstall
+
+        sh ./installer uninstall
 
 RATIONALE
 =========
